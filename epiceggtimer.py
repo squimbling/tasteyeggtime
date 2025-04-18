@@ -6,9 +6,16 @@ loop_variable = True
 OPTIONS = {
     'ramen':(6, 30),
     'salad':(15, 0),
+<<<<<<< HEAD
     'dippy':(4, 30)
 }
 # dictionary ^ (anything with a 'key': value is a dictionary)
+=======
+    'dippy':(4, 30),
+    'test':(0, 30)
+}
+# using test only to run code without waiting for ages
+>>>>>>> 526c5f2 (re-added egg timer updates after git hiccup)
 
 while loop_variable:
 
@@ -46,6 +53,7 @@ print(t)
 number_statements = total_seconds // TIME_PERIOD
 # // is for integers only !
 
+<<<<<<< HEAD
 for i in range (number_statements):
     # for loop needs a colon
     
@@ -60,6 +68,22 @@ for i in range (number_statements):
         print (f'{seconds}secs')
     else:
         print (f'{minutes}mins {seconds}secs')
+=======
+for i in range(number_statements):
+    time.sleep(TIME_PERIOD)
+    total_seconds -= TIME_PERIOD
+    minutes = total_seconds // 60
+    seconds = total_seconds % 60
+
+    if minutes == 0:
+        print(f'{seconds}secs left...')
+    else:
+        print(f'{minutes}mins {seconds}secs left...')
+
+import os
+os.system("afplay GTA_V_Franklin_iFruit_Notification_Alert.mp3")
+
+>>>>>>> 526c5f2 (re-added egg timer updates after git hiccup)
 
 print ('get that egg outta the water')
 print ('i hope you have an eggcellent meal hahahahahaha do you get it egg like the food')
