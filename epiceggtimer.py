@@ -15,7 +15,7 @@ OPTIONS = {
     'test':(0, 30)
 }
 # using test only to run code without waiting for ages
->>>>>>> 526c5f2 (re-added egg timer updates after git hiccup)
+
 
 while loop_variable:
 
